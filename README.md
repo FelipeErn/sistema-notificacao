@@ -22,7 +22,6 @@ Antes de rodar o projeto, é necessário ter os seguintes requisitos:
 
 Clone o repositório para o seu ambiente local:
 
-```bash
 git clone https://github.com/seu-usuario/sistema-notificacao.git
 
 cd sistema-notificacao
@@ -30,7 +29,7 @@ composer install
 
 Isso irá instalar todas as dependências necessárias, incluindo bibliotecas externas para enviar e-mails e SMS.
 
-Passo 3: Configuração do Servidor Web
+### Passo 3: Configuração do Servidor Web
 O projeto foi estruturado para ser executado localmente com um servidor Apache. Se estiver usando o XAMPP, siga estas etapas:
 
 Mova o conteúdo do projeto para a pasta htdocs do XAMPP:
@@ -38,13 +37,13 @@ Mova o conteúdo do projeto para a pasta htdocs do XAMPP:
 Exemplo: C:\xampp\htdocs\sistema-notificacao
 Inicie o Apache no painel de controle do XAMPP.
 
-Passo 4: Configuração do E-mail (opcional)
+### Passo 4: Configuração do E-mail (opcional)
 Para enviar notificações por e-mail, você pode configurar um servidor SMTP no seu código. No arquivo src/notify.php, adicione as configurações do servidor SMTP que você está utilizando (por exemplo, Gmail, Mailgun, SendGrid, etc.).
 
-Passo 5: Acesse o Sistema
+### Passo 5: Acesse o Sistema
 Abra seu navegador e vá para http://localhost/sistema-notificacao/public/index.php para acessar a página de envio de notificação.
 
-Passo 6: Teste a Notificação
+### Passo 6: Teste a Notificação
 Preencha o formulário com o destinatário e a mensagem. Após o envio, você será redirecionado para uma página de sucesso com os detalhes da notificação enviada.
 
 Estrutura de Arquivos
