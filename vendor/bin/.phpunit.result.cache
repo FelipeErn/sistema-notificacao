@@ -1,0 +1,1 @@
+C:37:"PHPUnit\Runner\DefaultTestResultCache":226:{a:2:{s:7:"defects";a:0:{}s:5:"times";a:4:{s:36:"SingletonTest::testSingletonInstance";d:0.002;s:26:"SingletonTest::testAddUser";d:0;s:35:"StrategyTest::testEmailNotification";d:0;s:33:"StrategyTest::testSMSNotification";d:0;}}}
