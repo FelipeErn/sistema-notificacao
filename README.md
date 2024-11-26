@@ -48,6 +48,8 @@ Preencha o formulário com o destinatário e a mensagem. Após o envio, você se
 
 Estrutura de Arquivos
 
+```bash
+
 sistema-notificacao/
 ├── public/
 │   ├── index.php            # Página inicial com o formulário de envio
