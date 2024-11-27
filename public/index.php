@@ -14,7 +14,6 @@
                 <label for="notification_type">Tipo de Notificação</label>
                 <select name="notification_type" id="notification_type" required>
                     <option value="email">E-mail</option>
-                    <option value="sms">SMS</option>
                 </select>
             </div>
 

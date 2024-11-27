@@ -3,7 +3,6 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 
 use Strategy\EmailNotification;
-use Strategy\SMSNotification;
 use Strategy\NotificationContext;
 use Singleton\UserRegistry;
 
@@ -26,8 +25,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if ($notificationType == 'email') {
         $notification = new NotificationContext(new EmailNotification());
-    } elseif ($notificationType == 'sms') {
-        $notification = new NotificationContext(new SMSNotification());
     } else {
         echo "Tipo de notificação não reconhecido.";
         exit;

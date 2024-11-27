@@ -1,10 +1,10 @@
 # Sistema de Notificação
 
-Este sistema permite o envio de notificações por e-mail ou SMS para um destinatário específico, com a opção de registrar um novo usuário (opcional). Após o envio, uma página de sucesso é exibida, confirmando os detalhes da notificação enviada.
+Este sistema permite o envio de notificações por e-mail para um destinatário específico, com a opção de registrar um novo usuário (opcional). Após o envio, uma página de sucesso é exibida, confirmando os detalhes da notificação enviada.
 
 ## Funcionalidades
 
-- **Envio de Notificação**: O usuário pode escolher entre enviar uma notificação por **E-mail** ou **SMS**.
+- **Envio de Notificação**: O usuário pode escolher entre enviar uma notificação por **E-mail**.
 - **Formulário de Envio**: O sistema requer informações como destinatário, mensagem e um campo opcional para registrar um novo usuário.
 - **Página de Sucesso**: Após o envio da notificação, uma página de sucesso é exibida com os detalhes da notificação enviada.
 
@@ -27,7 +27,7 @@ git clone https://github.com/seu-usuario/sistema-notificacao.git
 cd sistema-notificacao
 composer install
 
-Isso irá instalar todas as dependências necessárias, incluindo bibliotecas externas para enviar e-mails e SMS.
+Isso irá instalar todas as dependências necessárias, incluindo bibliotecas externas para enviar e-mails.
 
 ### Passo 3: Configuração do Servidor Web
 O projeto foi estruturado para ser executado localmente com um servidor Apache. Se estiver usando o XAMPP, siga estas etapas:
@@ -56,7 +56,7 @@ sistema-notificacao/
 │   └── success.php          # Página de sucesso após o envio da notificação
 ├── src/
 │   ├── singleton/           # Padrão Singleton para gerenciar usuários
-│   ├── strategy/            # Estratégia para enviar notificações (Email e SMS)
+│   ├── strategy/            # Estratégia para enviar notificações (Email)
 │   └── utils/               # Utilitários auxiliares
 ├── tests/                   # Testes para verificar o funcionamento do sistema
 ├── vendor/                  # Dependências do Composer
@@ -70,7 +70,7 @@ Biblioteca de Envio de E-mails (ex: PHPMailer): Para enviar e-mails via SMTP.
 Estratégia de Notificação: Utilização do padrão de design Strategy para separar a lógica de envio de notificações.
 Singleton: Para gerenciamento de usuários com o padrão Singleton.
 Como Funciona
-O usuário preenche um formulário com o tipo de notificação (E-mail ou SMS), destinatário, mensagem e um campo opcional para registrar um novo usuário.
+O usuário preenche um formulário com o tipo de notificação (E-mail), destinatário, mensagem e um campo opcional para registrar um novo usuário.
 Quando o formulário é enviado, o sistema processa a solicitação, envia a notificação para o destinatário usando a estratégia selecionada e registra o usuário (se fornecido).
 O sistema redireciona o usuário para uma página de sucesso, onde os detalhes da notificação (destinatário, mensagem e usuário) são exibidos.
 Contribuindo
